@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hema Prakash D - Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e293b;
+            --secondary: #0f766e;
+            --text-main: #334155;
+            --text-light: #64748b;
+            --bg-light: #f8fafc;
+            --border: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9;
+            color: var(--text-main);
+            line-height: 1.5;
+            padding: 40px 20px;
+        }
+
+        .resume-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            position: relative;
+        }
+
+        header {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .header-left h1 {
+            font-size: 28px;
+            color: var(--primary);
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 4px;
+        }
+
+        .header-left p {
+            font-size: 14px;
+            color: var(--secondary);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .header-right {
+            text-align: right;
+            font-size: 13px;
+            color: var(--text-light);
+            list-style: none;
+        }
+
+        .header-right li {
+            margin-bottom: 2px;
+        }
+
+        .header-right a {
+            color: var(--text-light);
+            text-decoration: none;
+        }
+
+        .header-right a:hover {
+            color: var(--secondary);
+        }
+
+        .summary {
+            font-size: 14px;
+            color: var(--text-main);
+            margin-bottom: 25px;
+            font-weight: 400;
+            text-align: justify;
+        }
+
+        .main-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: 15px;
+            color: var(--primary);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 6px;
+            margin-bottom: 15px;
+        }
+
+        .item {
+            margin-bottom: 18px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 5px;
+        }
+
+        .item-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .item-org {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--secondary);
+        }
+
+        .item-date {
+            font-size: 12px;
+            color: var(--text-light);
+            white-space: nowrap;
+            text-align: right;
+        }
+
+        .item-links {
+            font-size: 12px;
+            margin-bottom: 4px;
+        }
+
+        .item-links a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+
+        .item-links a:hover {
+            text-decoration: underline;
+        }
+
+        ul.bullets {
+            list-style-type: square;
+            margin-left: 18px;
+            font-size: 13px;
+            color: var(--text-main);
+        }
+
+        ul.bullets li {
+            margin-bottom: 4px;
+        }
+
+        .skill-group {
+            margin-bottom: 12px;
+            font-size: 13px;
+        }
+
+        .skill-group strong {
+            display: block;
+            color: var(--primary);
+            margin-bottom: 3px;
+            font-weight: 600;
+        }
+
+        .skill-group p {
+            color: var(--text-main);
+        }
+
+        .edu-item {
+            margin-bottom: 12px;
+            font-size: 13px;
+        }
+
+        .edu-title {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .edu-details {
+            color: var(--text-light);
+            font-size: 12px;
+            margin-top: 1px;
+        }
+
+        .grade {
+            font-weight: 500;
+            color: var(--secondary);
+        }
+
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+            .resume-container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+            @page {
+                size: A4;
+                margin: 1.5cm;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="resume-container">
+    <header>
+        <div class="header-left">
+            <h1>HEMA PRAKASH D</h1>
+            <p>B.Tech CSE Student &amp; AI/ML Developer</p>
+        </div>
+        <ul class="header-right">
+            <li>Trichy, Tamil Nadu, India</li>
+            <li><a href="mailto:hemaprakashdevaraju@gmail.com">hemaprakashdevaraju@gmail.com</a></li>
+            <li>+91-6381277964</li>
+            <li><a href="https://linkedin.com/in/hemaprakash-devaraju-177436334" target="_blank">in/hemaprakash-devaraju</a></li>
+        </ul>
+    </header>
+
+    <div class="summary">
+        Third Year B.Tech CSE (AI-ML) student at VIT Chennai with hands-on experience building AI, computer vision, and IoT systems[cite: 56]. Proven ability to deliver end-to-end solutions from sensor-level hardware integration to ML model deployment with measurable performance gains[cite: 57]. Seeking roles in AI/ML engineering, embedded systems, or full-stack development where I can apply practical skills to real-world problems[cite: 58].
+    </div>
+
+    <div class="main-grid">
+        <div class="col-left">
+            <section>
+                <h2 class="section-title">Experience</h2>
+                
+                <div class="item">
+                    <div class="item-header">
+                        <div>
+                            <span class="item-title">Hackathon-Glitchcon 2nd Edition</span><br>
+                            <span class="item-org">VIT Chennai</span>
+                        </div>
+                        <span class="item-date">March 2026 – April 2026</span>
+                    </div>
+                    <ul class="bullets">
+                        <li>Built Health Ledger, an AI-powered Healthcare Revenue Cycle Management (RCM) platform that automated end-to-end claim processing workflows[cite: 63].</li>
+                        <li>Reduced manual follow-up effort by 80% by engineering an AI-prioritized email and Twilio-powered voice call system for claim escalation[cite: 64].</li>
+                        <li>Improved claim resolution speed by 90% through a real-time speech processing and conversational AI pipeline[cite: 65].</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <div>
+                            <span class="item-title">AI &amp; Embedded Systems Developer</span><br>
+                            <span class="item-org">Hackathon - Revive Thon | VIT Chennai</span>
+                        </div>
+                        <span class="item-date">November 2024 - December 2024</span>
+                    </div>
+                    <ul class="bullets">
+                        <li>Developed AeroAid Nexus during ReviveThon, an AI-powered modular drone payload platform for environmental crisis response, integrating computer vision, IoT sensors, and autonomous monitoring systems, achieving ~55% faster hazard detection and ~70% improvement in environmental surveillance efficiency through real-time aerial analytics and smart payload automation[cite: 69].</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">Projects</h2>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">AgriNexus - Smart Agriculture Platform</span>
+                        <span class="item-date">VIT Chennai</span>
+                    </div>
+                    <div class="item-links">
+                        <a href="https://github.com/smksnk18/AGRINEXUS" target="_blank">github.com/smksnk18/AGRINEXUS</a>
+                    </div>
+                    <ul class="bullets">
+                        <li>Integrated AI inference with IoT sensor data (soil moisture, temperature, humidity) to automate irrigation decisions[cite: 73].</li>
+                        <li>Designed a real-time monitoring dashboard providing actionable alerts to farmers, reducing manual inspection time[cite: 74].</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Rubik's Cube AI Solver</span>
+                        <span class="item-date">VIT Chennai</span>
+                    </div>
+                    <div class="item-links">
+                        <a href="https://github.com/smksnk18/Al-based-Rubix-Cube-Solver" target="_blank">github.com/smksnk18/Al-based-Rubix-Cube-Solver</a>
+                    </div>
+                    <ul class="bullets">
+                        <li>Implemented advanced solving algorithms with symmetry pruning, cutting computation time by ~40% versus naive approaches[cite: 85].</li>
+                        <li>Optimized move-table lookups to reduce redundant state exploration by ~50%, enabling faster average solves[cite: 86].</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">AI-Based Cotton Classification System</span>
+                        <span class="item-date">VIT Chennai</span>
+                    </div>
+                    <ul class="bullets">
+                        <li>Trained ML classification models on a custom cotton dataset with preprocessing and feature extraction pipelines, achieving ~35% gain in quality identification efficiency[cite: 77].</li>
+                        <li>Integrated hardware sensors for real-time sample capture and automated quality grading, reducing manual sorting effort[cite: 78].</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Secure P2P File Transfer System</span>
+                        <span class="item-date">VIT Chennai</span>
+                    </div>
+                    <div class="item-links">
+                        <a href="https://github.com/hemaprakashdevaraju/Secure-P2P-File-Tran" target="_blank">github.com/hemaprakashdevaraju/Secure-P2P-File-Tran</a>
+                    </div>
+                    <ul class="bullets">
+                        <li>Developed a Java-based distributed P2P file transfer system using socket programming with tracker-based peer discovery and load-balanced chunk transfer[cite: 89].</li>
+                        <li>Implemented AES encrypted communication and MD5 integrity verification for secure and reliable distributed file sharing[cite: 90].</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Fire Detection and Prevention System</span>
+                        <span class="item-date">VIT Chennai</span>
+                    </div>
+                    <ul class="bullets">
+                        <li>Built an Arduino-based safety system with smoke, flame, and temperature sensors triggering LCD alerts, servo-controlled vents, and Twilio SMS/voice notifications[cite: 81].</li>
+                        <li>Implemented Bluetooth communication module for remote status monitoring and manual override[cite: 82].</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <div class="col-right">
+            <section>
+                <h2 class="section-title">Skills</h2>
+                
+                <div class="skill-group">
+                    <strong>Languages</strong>
+                    <p>Python, C/C++, Java, JavaScript, SQL, HTML, CSS, MATLAB, React.js [cite: 101]</p>
+                </div>
+
+                <div class="skill-group">
+                    <strong>AI/ML &amp; Computer Vision</strong>
+                    <p>Machine Learning, Computer Vision, Dataset Preprocessing, Feature Extraction, Model Training &amp; Evaluation, OpenCV, Scikit-learn, NumPy, Pandas [cite: 102]</p>
+                </div>
+
+                <div class="skill-group">
+                    <strong>Frameworks &amp; Libraries</strong>
+                    <p>PyGame, PyAudio, Twilio SDK [cite: 103]</p>
+                </div>
+
+                <div class="skill-group">
+                    <strong>Embedded Systems &amp; IoT</strong>
+                    <p>Arduino, ESP8266, Sensor Interfacing, Relay Modules, Servo Control, Bluetooth Communication, Real-Time Monitoring [cite: 104]</p>
+                </div>
+
+                <div class="skill-group">
+                    <strong>Tools &amp; Platforms</strong>
+                    <p>Git, GitHub, MySQL, MongoDB, Arduino IDE, Blender, AutoCAD, Autodesk Revit, WSL Ubuntu [cite: 104]</p>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">Education</h2>
+                
+                <div class="edu-item">
+                    <div class="edu-title">B.Tech in Computer Science &amp; Engineering (AI-ML)</div>
+                    <div class="edu-details">VIT Chennai, Chennai, Tamil Nadu [cite: 92]</div>
+                    <div class="edu-details">Currently Pursuing | Grade: <span class="grade">8.37/10</span> [cite: 93]</div>
+                </div>
+
+                <div class="edu-item">
+                    <div class="edu-title">Senior Secondary (Class XII)</div>
+                    <div class="edu-details">RSK Higher Secondary School [cite: 95]</div>
+                    <div class="edu-details">Year: 2024 | Grade: <span class="grade">86.8%</span> [cite: 95, 96]</div>
+                </div>
+
+                <div class="edu-item">
+                    <div class="edu-title">Secondary (Class X)</div>
+                    <div class="edu-details">RSK Higher Secondary School, Trichy [cite: 98]</div>
+                    <div class="edu-details">Year: 2022 | Grade: <span class="grade">93.6%</span> [cite: 99]</div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
